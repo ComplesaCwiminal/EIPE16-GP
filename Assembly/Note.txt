@@ -1,0 +1,5 @@
+THE ASSEMBLER IS NOT AVAILABLE AT THIS TIME
+I'm working on getting it back up and running, but it'll take some time before I manage to.
+
+The assembler used as a base for the EIPE16 is VASM by Volker Barthelmann and Frank Wille at:
+http://sun.hasenbraten.de/vasm/index.php?view=main
