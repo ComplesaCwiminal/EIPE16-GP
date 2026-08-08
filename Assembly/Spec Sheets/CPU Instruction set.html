@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title></title>
+	<meta name="generator" content="LibreOffice 26.2.5.2 (Windows)"/>
+	<meta name="created" content="00:00:00"/>
+	<meta name="changed" content="2026-08-04T04:04:10.288791300"/>
+	<meta name="AppVersion" content="15.0000"/>
+	
+	<style type="text/css">
+		body,div,table,thead,tbody,tfoot,tr,th,td,p { font-family:"Arial"; font-size:x-small }
+		a.comment-indicator:hover + comment { background:#ffd; position:absolute; display:block; border:1px solid black; padding:0.5em;  } 
+		a.comment-indicator { background:red; display:inline-block; border:1px solid black; width:0.5em; height:0.5em;  } 
+		comment { display:none;  } 
+	</style>
+	
+</head>
+
+<body>
+<hr>
+	<p><center>
+		<h1>Overview</h1>
+		<A HREF="#table0">Operations</A><br>
+		<A HREF="#table1">IO</A><br>
+		
+	</center></p>
+<hr>
+<A NAME="table0"><h1>Sheet 1: <em>Operations</em></h1></A>
+<table cellspacing="0" border="0">
+	<colgroup width="88"></colgroup>
+	<colgroup width="124"></colgroup>
+	<colgroup width="649"></colgroup>
+	<colgroup width="185"></colgroup>
+	<colgroup width="225"></colgroup>
+	<tr>
+		<td height="38" align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;HEX&quot;}"><font color="#000000">HEX</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;NAME&quot;}"><font color="#000000">NAME</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;DESCRIPTION&quot;}"><font color="#000000">DESCRIPTION</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;ALIAS(ES)&quot;}"><font color="#000000">ALIAS(ES)</font></td>
+		<td align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;48 bit per inst.&quot;}"><font color="#000000">48 bit per inst.</font></td>
+	</tr>
+	<tr>
+		<td height="38" align="left" valign=middle sdnum="1033;0;@" data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;0&quot;}"><font color="#000000">0</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;ADC&quot;}"><font color="#000000">ADC</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;Adds &lt;tar&gt; to &lt;sel&gt;, outputs to &lt;slc&gt;; carry is outputted to CR&quot;}"><font color="#000000">Adds &lt;tar&gt; to &lt;sel&gt;, outputs to &lt;slc&gt;; carry is outputted to CR</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;8 bit loaded at a time&quot;}"><font color="#000000">8 bit loaded at a time</font></td>
+	</tr>
+	<tr>
+		<td height="38" align="left" valign=middle sdnum="1033;0;@" data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;1&quot;}"><font color="#000000">1</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;ADD&quot;}"><font color="#000000">ADD</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;Adds &lt;tar&gt; to &lt;sel&gt;, outputs to &lt;slc&gt;&quot;}"><font color="#000000">Adds &lt;tar&gt; to &lt;sel&gt;, outputs to &lt;slc&gt;</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td height="38" align="left" valign=middle sdnum="1033;0;@" data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;2&quot;}"><font color="#000000">2</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;SUB&quot;}"><font color="#000000">SUB</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;Subtracts &lt;sel&gt; from &lt;tar&gt;; outputs to &lt;slc&gt;&quot;}"><font color="#000000">Subtracts &lt;sel&gt; from &lt;tar&gt;; outputs to &lt;slc&gt;</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td height="38" align="left" valign=middle sdnum="1033;0;@" data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;3&quot;}"><font color="#000000">3</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;SBB&quot;}"><font color="#000000">SBB</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;Subtracts &lt;sel&gt; to &lt;tar&gt;, outputs to &lt;slc&gt;; borrow is outputted to CR&quot;}"><font color="#000000">Subtracts &lt;sel&gt; to &lt;tar&gt;, outputs to &lt;slc&gt;; borrow is outputted to CR</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td height="38" align="left" valign=middle sdnum="1033;0;@" data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;4&quot;}"><font color="#000000">4</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;MLC&quot;}"><font color="#000000">MLC</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;Multiplies &lt;tar&gt; with &lt;sel&gt;, outputs to &lt;slc&gt;; carry is outputted to CR&quot;}"><font color="#000000">Multiplies &lt;tar&gt; with &lt;sel&gt;, outputs to &lt;slc&gt;; carry is outputted to CR</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td height="38" align="left" valign=middle sdnum="1033;0;@" data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;5&quot;}"><font color="#000000">5</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;MUL&quot;}"><font color="#000000">MUL</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;Multiplies &lt;tar&gt; with &lt;sel&gt;, outputs to &lt;slc&gt;;&quot;}"><font color="#000000">Multiplies &lt;tar&gt; with &lt;sel&gt;, outputs to &lt;slc&gt;;</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td height="38" align="left" valign=middle sdnum="1033;0;@" data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;6&quot;}"><font color="#000000">6</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;UNA&quot;}"><font color="#000000">UNA</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;Unallocated \/ No Operation&quot;}"><font color="#000000">Unallocated / No Operation</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;NOP&quot;}"><font color="#000000">NOP</font></td>
+		<td align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td height="38" align="left" valign=middle sdnum="1033;0;@" data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;7&quot;}"><font color="#000000">7</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;PUS&quot;}"><font color="#000000">PUS</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;pushes &lt;tar&gt; to the stack&quot;}"><font color="#000000">pushes &lt;tar&gt; to the stack</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td height="38" align="left" valign=middle sdnum="1033;0;@" data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;8&quot;}"><font color="#000000">8</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;POP&quot;}"><font color="#000000">POP</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;pops the stack to &lt;slc&gt;&quot;}"><font color="#000000">pops the stack to &lt;slc&gt;</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td height="38" align="left" valign=middle sdnum="1033;0;@" data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;9&quot;}"><font color="#000000">9</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;BIS&quot;}"><font color="#000000">BIS</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;Branches if BR is 0&quot;}"><font color="#000000">Branches if BR is 0</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td height="38" align="left" valign=middle sdnum="1033;0;@" data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;A&quot;}"><font color="#000000">A</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;BIU&quot;}"><font color="#000000">BIU</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;Branches if BR is 1&quot;}"><font color="#000000">Branches if BR is 1</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td height="38" align="left" valign=middle sdnum="1033;0;@" data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;B&quot;}"><font color="#000000">B</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;BIC&quot;}"><font color="#000000">BIC</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;Branches is CR is 1&quot;}"><font color="#000000">Branches is CR is 1</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td height="38" align="left" valign=middle sdnum="1033;0;@" data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;C&quot;}"><font color="#000000">C</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;BTF&quot;}"><font color="#000000">BTF</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;Branches is CR is 0&quot;}"><font color="#000000">Branches is CR is 0</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td height="38" align="left" valign=middle sdnum="1033;0;@" data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;D&quot;}"><font color="#000000">D</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;BRA&quot;}"><font color="#000000">BRA</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;Branches to &lt;tar&gt;. Unconditionally.&quot;}"><font color="#000000">Branches to &lt;tar&gt;. Unconditionally.</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td height="38" align="left" valign=middle sdnum="1033;0;@" data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;E&quot;}"><font color="#000000">E</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;AND&quot;}"><font color="#000000">AND</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;AND &lt;tar&gt; and &lt;sel&gt;, and output to &lt;slc&gt;&quot;}"><font color="#000000">AND &lt;tar&gt; and &lt;sel&gt;, and output to &lt;slc&gt;</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td height="38" align="left" valign=middle sdnum="1033;0;@" data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;F&quot;}"><font color="#000000">F</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;NOT&quot;}"><font color="#000000">NOT</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;NAND &lt;tar&gt; and &lt;sel&gt; and output to &lt;slc&gt;&quot;}"><font color="#000000">NAND &lt;tar&gt; and &lt;sel&gt; and output to &lt;slc&gt;</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td height="38" align="left" valign=middle sdnum="1033;0;@" data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;10&quot;}"><font color="#000000">10</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;XOR&quot;}"><font color="#000000">XOR</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;XOR &lt;tar&gt; and &lt;sel&gt;, and output to &lt;slc&gt;&quot;}"><font color="#000000">XOR &lt;tar&gt; and &lt;sel&gt;, and output to &lt;slc&gt;</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td height="38" align="left" valign=middle sdnum="1033;0;@" data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;11&quot;}"><font color="#000000">11</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;WIM&quot;}"><font color="#000000">WIM</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;Writes &lt;sel&gt; at address &lt;tar&gt;&quot;}"><font color="#000000">Writes &lt;sel&gt; at address &lt;tar&gt;</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td height="38" align="left" valign=middle sdnum="1033;0;@" data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;12&quot;}"><font color="#000000">12</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;RIM&quot;}"><font color="#000000">RIM</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;Reads from address &lt;tar&gt; writes it to &lt;slc&gt;&quot;}"><font color="#000000">Reads from address &lt;tar&gt; writes it to &lt;slc&gt;</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td height="38" align="left" valign=middle sdnum="1033;0;@" data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;13&quot;}"><font color="#000000">13</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;SAR&quot;}"><font color="#000000">SAR</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;Sets &lt;slc&gt; to &lt;tar&gt; &quot;}"><font color="#000000">Sets &lt;slc&gt; to &lt;tar&gt; </font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;SET, WRT, LDR&quot;}"><font color="#000000">SET, WRT, LDR</font></td>
+		<td align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td height="38" align="left" valign=middle sdnum="1033;0;@" data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;14&quot;}"><font color="#000000">14</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;JSR&quot;}"><font color="#000000">JSR</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;Jumps to a subroutine (&lt;tar&gt;); Pushes to stack&quot;}"><font color="#000000">Jumps to a subroutine (&lt;tar&gt;); Pushes to stack</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;JMP&quot;}"><font color="#000000">JMP</font></td>
+		<td align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td height="38" align="left" valign=middle sdnum="1033;0;@" data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;15&quot;}"><font color="#000000">15</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;RET&quot;}"><font color="#000000">RET</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;Returns from a subroutine; Pops the stack and jumps to read value&quot;}"><font color="#000000">Returns from a subroutine; Pops the stack and jumps to read value</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td height="38" align="left" valign=middle sdnum="1033;0;@" data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;16&quot;}"><font color="#000000">16</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;HLT&quot;}"><font color="#000000">HLT</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;Halt until the next interrupt&quot;}"><font color="#000000">Halt until the next interrupt</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;STP&quot;}"><font color="#000000">STP</font></td>
+		<td align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td height="38" align="left" valign=middle sdnum="1033;0;@" data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;17&quot;}"><font color="#000000">17</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;CMP&quot;}"><font color="#000000">CMP</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;SBB but only CR output&quot;}"><font color="#000000">SBB but only CR output</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;DIF&quot;}"><font color="#000000">DIF</font></td>
+		<td align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td height="38" align="left" valign=middle sdnum="1033;0;@" data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;18&quot;}"><font color="#000000">18</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;SHL&quot;}"><font color="#000000">SHL</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;Shifts &lt;tar&gt; left; uses &lt;slc&gt;&quot;}"><font color="#000000">Shifts &lt;tar&gt; left; uses &lt;slc&gt;</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td height="38" align="left" valign=middle sdnum="1033;0;@" data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;19&quot;}"><font color="#000000">19</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;ROL&quot;}"><font color="#000000">ROL</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;Rotates &lt;tar&gt; left; uses &lt;slc&gt;&quot;}"><font color="#000000">Rotates &lt;tar&gt; left; uses &lt;slc&gt;</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td height="38" align="left" valign=middle sdnum="1033;0;@" data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;1A&quot;}"><font color="#000000">1A</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;SHR&quot;}"><font color="#000000">SHR</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;shifts &lt;tar&gt; right; uses &lt;slc&gt;&quot;}"><font color="#000000">shifts &lt;tar&gt; right; uses &lt;slc&gt;</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td height="38" align="left" valign=middle sdnum="1033;0;@" data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;1B&quot;}"><font color="#000000">1B</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;ROR&quot;}"><font color="#000000">ROR</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;Rotates &lt;tar&gt; right; uses &lt;slc&gt;&quot;}"><font color="#000000">Rotates &lt;tar&gt; right; uses &lt;slc&gt;</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td height="38" align="left" valign=middle sdnum="1033;0;@" data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;1C&quot;}"><font color="#000000">1C</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td height="38" align="left" valign=middle sdnum="1033;0;@" data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;1D&quot;}"><font color="#000000">1D</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td height="38" align="left" valign=middle sdnum="1033;0;@" data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;1E&quot;}"><font color="#000000">1E</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td height="38" align="left" valign=middle sdnum="1033;0;@" data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;1F&quot;}"><font color="#000000">1F</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td height="38" align="left" valign=middle sdnum="1033;0;@" data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;20&quot;}"><font color="#000000">20</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td height="38" align="left" valign=middle sdnum="1033;0;@" data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;21&quot;}"><font color="#000000">21</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td height="38" align="left" valign=middle sdnum="1033;0;@" data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;22&quot;}"><font color="#000000">22</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td height="38" align="left" valign=middle sdnum="1033;0;@" data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;23&quot;}"><font color="#000000">23</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td height="38" align="left" valign=middle sdnum="1033;0;@" data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;24&quot;}"><font color="#000000">24</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td height="38" align="left" valign=middle sdnum="1033;0;@" data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;25&quot;}"><font color="#000000">25</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td height="38" align="left" valign=middle sdnum="1033;0;@" data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;26&quot;}"><font color="#000000">26</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+	</tr>
+</table>
+<!-- ************************************************************************** -->
+<hr>
+<A NAME="table1"><h1>Sheet 2: <em>IO</em></h1></A>
+<table cellspacing="0" border="0">
+	<colgroup width="106"></colgroup>
+	<colgroup width="122"></colgroup>
+	<colgroup width="245"></colgroup>
+	<colgroup width="115"></colgroup>
+	<colgroup width="143"></colgroup>
+	<tr>
+		<td height="38" align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;i. HEX&quot;}"><font color="#000000">i. HEX</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;ITEM NAME&quot;}"><font color="#000000">ITEM NAME</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;ITEM DESCRIPTION&quot;}"><font color="#000000">ITEM DESCRIPTION</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;I. BITS&quot;}"><font color="#000000">I. BITS</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;R\/W?&quot;}"><font color="#000000">R/W?</font></td>
+	</tr>
+	<tr>
+		<td height="38" align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;0&quot;}"><font color="#000000">0</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;R1&quot;}"><font color="#000000">R1</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;Register 1&quot;}"><font color="#000000">Register 1</font></td>
+		<td align="right" valign=middle sdval="16" sdnum="1033;"><font color="#000000">16</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;Read, Write&quot;}"><font color="#000000">Read, Write</font></td>
+	</tr>
+	<tr>
+		<td height="38" align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;1&quot;}"><font color="#000000">1</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;R2&quot;}"><font color="#000000">R2</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;Register 2&quot;}"><font color="#000000">Register 2</font></td>
+		<td align="right" valign=middle sdval="16" sdnum="1033;"><font color="#000000">16</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;Read, Write&quot;}"><font color="#000000">Read, Write</font></td>
+	</tr>
+	<tr>
+		<td height="38" align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;2&quot;}"><font color="#000000">2</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;R3&quot;}"><font color="#000000">R3</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;Register 3&quot;}"><font color="#000000">Register 3</font></td>
+		<td align="right" valign=middle sdval="16" sdnum="1033;"><font color="#000000">16</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;Read, Write&quot;}"><font color="#000000">Read, Write</font></td>
+	</tr>
+	<tr>
+		<td height="38" align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;3&quot;}"><font color="#000000">3</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;R4&quot;}"><font color="#000000">R4</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;Register 4&quot;}"><font color="#000000">Register 4</font></td>
+		<td align="right" valign=middle sdval="16" sdnum="1033;"><font color="#000000">16</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;Read, Write&quot;}"><font color="#000000">Read, Write</font></td>
+	</tr>
+	<tr>
+		<td height="38" align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;4&quot;}"><font color="#000000">4</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;CR&quot;}"><font color="#000000">CR</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;Carry Register&quot;}"><font color="#000000">Carry Register</font></td>
+		<td align="right" valign=middle sdval="16" sdnum="1033;"><font color="#000000">16</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;Read&quot;}"><font color="#000000">Read</font></td>
+	</tr>
+	<tr>
+		<td height="38" align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;5&quot;}"><font color="#000000">5</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;BR&quot;}"><font color="#000000">BR</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;Branch Register&quot;}"><font color="#000000">Branch Register</font></td>
+		<td align="right" valign=middle sdval="1" sdnum="1033;"><font color="#000000">1</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;Read, Write&quot;}"><font color="#000000">Read, Write</font></td>
+	</tr>
+	<tr>
+		<td height="38" align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;6&quot;}"><font color="#000000">6</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;GA&quot;}"><font color="#000000">GA</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;Graphics Accelerator&quot;}"><font color="#000000">Graphics Accelerator</font></td>
+		<td align="right" valign=middle sdval="16" sdnum="1033;"><font color="#000000">16</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;Read, Write&quot;}"><font color="#000000">Read, Write</font></td>
+	</tr>
+	<tr>
+		<td height="38" align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;7&quot;}"><font color="#000000">7</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;P1&quot;}"><font color="#000000">P1</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;Peripheral 1&quot;}"><font color="#000000">Peripheral 1</font></td>
+		<td align="right" valign=middle sdval="16" sdnum="1033;"><font color="#000000">16</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;Unknown&quot;}"><font color="#000000">Unknown</font></td>
+	</tr>
+	<tr>
+		<td height="38" align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;8&quot;}"><font color="#000000">8</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;P2&quot;}"><font color="#000000">P2</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;Peripheral 2&quot;}"><font color="#000000">Peripheral 2</font></td>
+		<td align="right" valign=middle sdval="16" sdnum="1033;"><font color="#000000">16</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;Unknown&quot;}"><font color="#000000">Unknown</font></td>
+	</tr>
+	<tr>
+		<td height="38" align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;9&quot;}"><font color="#000000">9</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;P3&quot;}"><font color="#000000">P3</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;Peripheral 3&quot;}"><font color="#000000">Peripheral 3</font></td>
+		<td align="right" valign=middle sdval="16" sdnum="1033;"><font color="#000000">16</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;Unknown&quot;}"><font color="#000000">Unknown</font></td>
+	</tr>
+	<tr>
+		<td height="38" align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;A&quot;}"><font color="#000000">A</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;P4&quot;}"><font color="#000000">P4</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;Peripheral 4&quot;}"><font color="#000000">Peripheral 4</font></td>
+		<td align="right" valign=middle sdval="16" sdnum="1033;"><font color="#000000">16</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;Unknown&quot;}"><font color="#000000">Unknown</font></td>
+	</tr>
+	<tr>
+		<td height="38" align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;B&quot;}"><font color="#000000">B</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;SS&quot;}"><font color="#000000">SS</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;Stack size&quot;}"><font color="#000000">Stack size</font></td>
+		<td align="right" valign=middle sdval="16" sdnum="1033;"><font color="#000000">16</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;Read&quot;}"><font color="#000000">Read</font></td>
+	</tr>
+	<tr>
+		<td height="38" align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;C&quot;}"><font color="#000000">C</font></td>
+		<td align="left" valign=middle bgcolor="#000000" data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td align="left" valign=middle bgcolor="#000000" data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td align="left" valign=middle bgcolor="#000000" data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td align="left" valign=middle bgcolor="#000000" data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#434343"><br></font></td>
+	</tr>
+	<tr>
+		<td height="38" align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;D&quot;}"><font color="#000000">D</font></td>
+		<td align="left" valign=middle bgcolor="#000000" data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td align="left" valign=middle bgcolor="#000000" data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td align="left" valign=middle bgcolor="#000000" data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td align="left" valign=middle bgcolor="#000000" data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#434343"><br></font></td>
+	</tr>
+	<tr>
+		<td height="38" align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;E&quot;}"><font color="#000000">E</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;PC&quot;}"><font color="#000000">PC</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;Program counter&quot;}"><font color="#000000">Program counter</font></td>
+		<td align="right" valign=middle sdval="16" sdnum="1033;"><font color="#000000">16</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;Read&quot;}"><font color="#000000">Read</font></td>
+	</tr>
+	<tr>
+		<td height="38" align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;F&quot;}"><font color="#000000">F</font></td>
+		<td align="left" valign=middle bgcolor="#000000" data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td align="left" valign=middle bgcolor="#000000" data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td align="left" valign=middle bgcolor="#000000" data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td align="left" valign=middle bgcolor="#000000" data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td height="38" align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;10&quot;}"><font color="#000000">10</font></td>
+		<td align="left" valign=middle bgcolor="#000000" data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td align="left" valign=middle bgcolor="#000000" data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td align="left" valign=middle bgcolor="#000000" data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td align="left" valign=middle bgcolor="#000000" data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td height="38" align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;11&quot;}"><font color="#000000">11</font></td>
+		<td align="left" valign=middle bgcolor="#000000" data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td align="left" valign=middle bgcolor="#000000" data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td align="left" valign=middle bgcolor="#000000" data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td align="left" valign=middle bgcolor="#000000" data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td height="38" align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;12&quot;}"><font color="#000000">12</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;IMM&quot;}"><font color="#000000">IMM</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;Immediate Value&quot;}"><font color="#000000">Immediate Value</font></td>
+		<td align="right" valign=middle sdval="16" sdnum="1033;"><font color="#000000">16</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;Read, N\/A&quot;}"><font color="#000000">Read, N/A</font></td>
+	</tr>
+	<tr>
+		<td height="38" align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;13&quot;}"><font color="#000000">13</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;VD&quot;}"><font color="#000000">VD</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;VOID&quot;}"><font color="#000000">VOID</font></td>
+		<td align="right" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;N\/A&quot;}"><font color="#000000">N/A</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;Write&quot;}"><font color="#000000">Write</font></td>
+	</tr>
+	<tr>
+		<td height="38" align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;14&quot;}"><font color="#000000">14</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td height="38" align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;15&quot;}"><font color="#000000">15</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot; &quot;}"><font color="#000000"> </font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td height="38" align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;16&quot;}"><font color="#000000">16</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td height="38" align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;17&quot;}"><font color="#000000">17</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td height="38" align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;18&quot;}"><font color="#000000">18</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td height="38" align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;19&quot;}"><font color="#000000">19</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td height="38" align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;1A&quot;}"><font color="#000000">1A</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td height="38" align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;1B&quot;}"><font color="#000000">1B</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td height="38" align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;1C&quot;}"><font color="#000000">1C</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td height="38" align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;1D&quot;}"><font color="#000000">1D</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td height="38" align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;1E&quot;}"><font color="#000000">1E</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td height="38" align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;1F&quot;}"><font color="#000000">1F</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td height="38" align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;20&quot;}"><font color="#000000">20</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td height="38" align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;21&quot;}"><font color="#000000">21</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td height="38" align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;22&quot;}"><font color="#000000">22</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td height="38" align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;23&quot;}"><font color="#000000">23</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td height="38" align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;24&quot;}"><font color="#000000">24</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td height="38" align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;25&quot;}"><font color="#000000">25</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td height="38" align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;26&quot;}"><font color="#000000">26</font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td align="left" valign=middle data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+	</tr>
+</table>
+<!-- ************************************************************************** -->
+</body>
+
+</html>
